@@ -1,0 +1,74 @@
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  width: min(60rem, 100%);
+}
+
+.input,
+.ctaBtn {
+  all: unset;
+  box-sizing: border-box;
+  background-color: #312e25;
+  color: var(--textSecondary);
+  /* padding: 1.7rem 0.7rem; */
+  padding: 1.9rem;
+  border: var(--border);
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.input {
+  width: 65%;
+}
+
+.ctaBtn {
+  background: var(--accent);
+  color: var(--textCta);
+  font-weight: 600;
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .inputContainer {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+  .input {
+    width: 100%;
+  }
+  .ctaBtn {
+    width: 100%;
+  }
+}
+
+.success,
+.error {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.success {
+  background-color: #052e16;
+  color: #22c55e;
+}
+
+.error {
+  background-color: #450a0a;
+  color: #f87171;
+}
+
+.inputContainer {
+  position: relative;
+}

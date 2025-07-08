@@ -1,0 +1,68 @@
+.heroSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 8.4rem 0;
+  padding-bottom: 3.5rem;
+}
+
+.container {
+  width: min(80rem, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4rem;
+  position: relative;
+  z-index: 1;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350%;
+  height: 350%;
+  background: radial-gradient(circle, #facc15 0%, transparent 60%);
+  filter: blur(90px);
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.callOut {
+  background-color: var(--element);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--border);
+  border-radius: 10000rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  padding: 0.4rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.callOut p {
+  font-size: 1.2rem;
+  color: var(--textAccent);
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: var(--textAccent);
+}
+
+.header {
+  color: var(--text);
+  font-size: clamp(4.2rem, 5vw, 8.4rem);
+  text-align: center;
+}
+
+.subHeader {
+  color: var(--textSecondary);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 1.8vw, 3.6rem);
+  text-align: center;
+}

@@ -14,11 +14,11 @@ export default function HeroSection() {
         </span>
 
         <h1 className={styles.header}>
-          Capture Every Idea. <Highlight>Build the Best Ones.</Highlight>{" "}
+          Gamify Your Habits. <Highlight>Level Up Your Life.</Highlight>{" "}
         </h1>
         <h2 className={styles.subHeader}>
-          Join <Highlight>many thinkers</Highlight> turning raw thoughts into
-          real startups.
+          Join <Highlight>new wave of achievers</Highlight> turning their habits
+          into real time game.
         </h2>
         <InputForm />
         <Image
